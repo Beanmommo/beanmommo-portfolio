@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/leonardo-prasetyo-resume",
   output: "export", //enables static export
-  reactStrictMode: true,
+  distDir: "dist",
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

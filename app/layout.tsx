@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { inter, roboto } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Leonardo Prasetyo",
@@ -14,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
